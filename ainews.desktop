@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=iXBT AI News
+GenericName=Дайджест новостей технологий
+Comment=Поиск интересных новостей технологий и науки на iXBT.com с помощью ИИ
+Exec=/home/b255/bin/ainews --gui-launch
+Icon=/home/b255/.local/share/icons/ainews.svg
+Terminal=false
+Categories=Network;News;Science;ArtificialIntelligence;
+StartupNotify=true
+StartupWMClass=ixbt_web
+Keywords=news;ai;ixbt;science;tech;новости;ии;технологии;

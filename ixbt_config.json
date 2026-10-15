@@ -1,0 +1,11 @@
+{
+  "top_count": 5,
+  "fetch_limit": 30,
+  "batch_size": 12,
+  "model": "gemma3:4b",
+  "ollama_url": "http://localhost:11434",
+  "all_feeds": false,
+  "telegram_token": "",
+  "telegram_chat_id": "",
+  "auto_telegram": false
+}

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="rocketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bgGrad)" filter="url(#glow)"/>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+
+  <!-- AI Radar Waves -->
+  <circle cx="64" cy="64" r="38" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="64" cy="64" r="48" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Rocket Body -->
+  <g transform="translate(64, 60) rotate(45) translate(-64, -60)">
+    <!-- Exhaust flame -->
+    <path d="M 58 78 Q 64 96 70 78 Q 64 84 58 78 Z" fill="url(#flameGrad)"/>
+    <path d="M 61 78 Q 64 90 67 78 Z" fill="#fbbf24"/>
+
+    <!-- Left fin -->
+    <path d="M 54 62 L 46 74 C 45 76 47 78 50 77 L 55 74 Z" fill="#c7d2fe"/>
+    <!-- Right fin -->
+    <path d="M 74 62 L 82 74 C 83 76 81 78 78 77 L 73 74 Z" fill="#c7d2fe"/>
+
+    <!-- Main rocket hull -->
+    <path d="M 64 30 C 56 42 54 64 54 74 L 74 74 C 74 64 72 42 64 30 Z" fill="url(#rocketGrad)"/>
+    
+    <!-- Porthole window -->
+    <circle cx="64" cy="50" r="5" fill="#38bdf8"/>
+    <circle cx="64" cy="50" r="3" fill="#0284c7"/>
+    <circle cx="62.5" cy="48.5" r="1.5" fill="#ffffff"/>
+
+    <!-- Nose cone accent -->
+    <path d="M 64 30 C 60 36 58 42 58 44 L 70 44 C 70 42 68 36 64 30 Z" fill="#f43f5e"/>
+  </g>
+
+  <!-- News / AI Sparks -->
+  <circle cx="34" cy="38" r="3" fill="#38bdf8" filter="url(#glow)"/>
+  <circle cx="94" cy="88" r="2.5" fill="#a5f3fc"/>
+  <circle cx="92" cy="36" r="2" fill="#fed7aa"/>
+  <circle cx="36" cy="86" r="2" fill="#c7d2fe"/>
+
+  <!-- Small AI Signal lines -->
+  <line x1="26" y1="38" x2="31" y2="38" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="34" y1="30" x2="34" y2="35" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
